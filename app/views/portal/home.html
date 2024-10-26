@@ -1,0 +1,9 @@
+{% extends "portal/layout.html" %}
+
+{% block portal %}
+<ul>
+    {% for user in users %} {# Acessa a lista de usuários #}
+        <li>{{ user.name }}</li> {# Use 'user.name' em vez de 'users.name' #}
+    {% endfor %}
+</ul>
+{% endblock %}
